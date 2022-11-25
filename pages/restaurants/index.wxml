@@ -1,0 +1,9 @@
+<!--pages/restaurants/index.wxml-->
+<view class="banner">All Restaurants</view>
+
+<view class="container">
+    <view class="card" wx:for="{{ restaurants }}" wx:for-item="restaurant" wx:key="id" data-id="{{ restaurant.id }}" bindtap="onNavigateToRestaurant">
+        <text class="f32 bold">{{ restaurant.name }}</text>
+        <text>{{ restaurant.phone }}</text>
+    </view>
+</view>

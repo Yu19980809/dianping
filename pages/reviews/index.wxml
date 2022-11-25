@@ -1,0 +1,9 @@
+<!--pages/reviews/index.wxml-->
+<view class="banner">Reviews of {{ name }}</view>
+
+<view class="container">
+    <view class="card" wx:for="{{ reviews }}" wx:for-item="review" wx:key="id">
+        <text class="bold">Rating: {{ review.rating }}</text>
+        <text>{{ review.content }}</text>
+    </view>
+</view>

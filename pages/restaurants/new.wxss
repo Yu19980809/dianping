@@ -1,0 +1,5 @@
+/* pages/restaurants/new.wxss */
+input, textarea {
+    border: 1rpx solid #000;
+    margin: 8rpx 0 32rpx 0;
+}

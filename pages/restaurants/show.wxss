@@ -1,0 +1,9 @@
+/* pages/restaurants/show.wxss */
+.btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.btns button {
+    margin: 16rpx 0;
+}

@@ -1,0 +1,29 @@
+<!--pages/restaurants/new.wxml-->
+<view class="banner">Create a new Restaurant</view>
+
+<view class="container">
+    <form bindsubmit="onSubmit">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Thirsty Subs"/>
+
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" placeholder="3712 Schaefer Ford"/>
+
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" placeholder="East Cristinatown"/>
+
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" placeholder="Bulgaria"/>
+
+        <label for="phone">Phone</label>
+        <input type="number" name="phone" id="phone" placeholder="15172765447"/>
+
+        <label for="image">Image</label>
+        <input type="text" name="image" id="image" placeholder="https://www.test.png"/>
+
+        <label for="description">Description</label>
+        <textarea name="description" id="description" cols="30" rows="10" placeholder="Good restaurant"></textarea>
+
+        <button form-type="submit" type="primary">Submit</button>
+    </form>
+</view>

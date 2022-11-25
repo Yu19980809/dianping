@@ -1,0 +1,47 @@
+/**app.wxss**/
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: 30vh;
+    background-color: pink;
+    color: #fff;
+    font-size: 48rpx;
+    font-weight: bold;
+}
+
+.container {
+    padding: 5vh 10vw;
+    box-sizing: border-box;
+    background-color: skyblue;
+}
+
+.tw {
+    color: #fff;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.f32 {
+    font-size: 32rpx;
+}
+
+.f48 {
+    font-size: 48rpx;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-bottom: 32rpx;
+    padding: 16rpx 32rpx;
+    background: #fff;
+    box-shadow: 0 0 30rpx rgba(0, 0, 0, .2);
+    border-radius: 8rpx;
+}

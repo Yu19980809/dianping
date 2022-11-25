@@ -1,0 +1,14 @@
+<!--pages/reviews/new.wxml-->
+<view class="banner">New review for {{ restaurant.name }}</view>
+
+<view class="container">
+    <form bindsubmit="onSubmit">
+        <label for="rating">Rating</label>
+        <input type="number" name="rating" id="rating" placeholder="1 - 5"/>
+
+        <label for="content">Content</label>
+        <textarea name="content" id="content" cols="30" rows="10" placeholder="Good restaurant"></textarea>
+
+        <button form-type="submit" type="primary">Submit</button>
+    </form>
+</view>

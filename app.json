@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/restaurants/index",
+    "pages/restaurants/show",
+    "pages/restaurants/new",
+    "pages/restaurants/map",
+    "pages/reviews/index",
+    "pages/reviews/new"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/restaurants/index",
+                "text": "All Restaurants"
+            },
+            {
+                "pagePath": "pages/restaurants/new",
+                "text": "New Restaurant"
+            }
+        ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

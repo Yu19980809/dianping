@@ -1,0 +1,12 @@
+<!--pages/restaurants/show.wxml-->
+<view class="banner">Info of {{ restaurant.name }}</view>
+
+<view class="container">
+    {{ restaurant.description }}
+
+    <view class="btns">
+        <button type="primary" bindtap="onNavigateToReviews">Reviews</button>
+        <button type="default" bindtap="onNavigateToMap">Location</button>
+        <button type="primary" bindtap="onNavigateToReviewNew">New Rview</button>
+    </view>
+</view>

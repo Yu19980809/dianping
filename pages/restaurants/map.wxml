@@ -1,0 +1,19 @@
+<!--pages/restaurants/map.wxml-->
+<view class="banner">Location of {{ restaurant.name }}</view>
+
+<view class="container">
+    <map
+      id="map{{ restaurant.id }}"
+      style="width: 100%; height: 300px;"
+      latitude="{{ restaurant.latitude }}"
+      longitude="{{ restaurant.longitude }}"
+      markers="{{ markers }}"
+      show-location
+    >
+        <cover-view slot="callout">
+            <cover-view marker-id="{{ restaurant.id }}">Test</cover-view>
+        </cover-view>
+    </map>
+</view>
+
+
