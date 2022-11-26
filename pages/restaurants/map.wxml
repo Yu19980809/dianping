@@ -10,9 +10,6 @@
       markers="{{ markers }}"
       show-location
     >
-        <cover-view slot="callout">
-            <cover-view marker-id="{{ restaurant.id }}">Test</cover-view>
-        </cover-view>
     </map>
 </view>
 

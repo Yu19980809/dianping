@@ -1,6 +1,21 @@
 <!--pages/restaurants/index.wxml-->
+<!-- banner -->
 <view class="banner">All Restaurants</view>
 
+<!-- map -->
+<view class="container">
+    <map
+      id="map{{ restaurants[0].id }}"
+      style="width: 100%; height: 300px;"
+      latitude="{{ restaurants[0].latitude }}"
+      longitude="{{ restaurants[0].longitude }}"
+      markers="{{ markers }}"
+      show-location
+    >
+    </map>
+</view>
+
+<!-- lists -->
 <view class="container">
     <view class="card" wx:for="{{ restaurants }}" wx:for-item="restaurant" wx:key="id" data-id="{{ restaurant.id }}" bindtap="onNavigateToRestaurant">
         <text class="f32 bold">{{ restaurant.name }}</text>

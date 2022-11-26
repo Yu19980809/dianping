@@ -9,6 +9,27 @@ Page({
     },
 
     /**
+     * 设置marker
+     */
+    onSetMarkers(restaurants) {
+        const markers = []
+        restaurants.forEach(restaurant => {
+            markers.push({
+                id: restaurant.id,
+                latitude: restaurant.latitude,
+                longitude: restaurant.longitude,
+                title: restaurant.name,
+                callout: {
+                    content: restaurant.name,
+                    display: 'ALWAYS'
+                }
+            })
+        })
+
+        this.setData({ markers })
+    },
+
+    /**
      * 跳转到详情页
      */
     onNavigateToRestaurant(e) {
@@ -46,6 +67,8 @@ Page({
                 if (res.statusCode !== 200) return
                 // 将获取到的数据保存在dataObject中
                 page.setData({ restaurants: res.data.restaurants.reverse() })
+                // 设置marker
+                page.onSetMarkers(res.data.restaurants)
           }
         })
     },
