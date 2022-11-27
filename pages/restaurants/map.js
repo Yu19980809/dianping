@@ -9,13 +9,6 @@ Page({
     },
 
     /**
-     * 展示地图
-     */
-    onShowMap() {
-
-    },
-
-    /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
@@ -34,7 +27,15 @@ Page({
                         id: res.data.id,
                         latitude: res.data.latitude,
                         longitude: res.data.longitude,
-                        title: res.data.name
+                        title: res.data.name,
+                        callout: {
+                            content: res.data.name,
+                            padding: 4,
+                            borderRadius: 4,
+                            borderWidth: 1,
+                            borderColor: '#0000ff',
+                            display: 'ALWAYS'
+                        }
                     }]
                 })
 
